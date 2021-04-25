@@ -34,8 +34,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       
       # 名前と自己紹介文とプロフィール画像のカラム
       t.string :name
-      t.text :introduction
-      t.string :profile_image_id
+      t.text :profile
+      t.string :image_id
 
 
       t.timestamps null: false
