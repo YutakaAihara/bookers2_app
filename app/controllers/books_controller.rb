@@ -1,8 +1,8 @@
 class BooksController < ApplicationController
 
   def index
-    @books = Book.all
     @book = Book.new
+    @post_images = PostImage.all
   end
 
   def create
