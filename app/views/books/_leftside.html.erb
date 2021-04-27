@@ -21,11 +21,11 @@
   <h2 class="new-heading mt-3">New book</h2>
   <%= form_with model:book, local:true do |f| %>
   <div class="new-contents form-group">
-    <p>Title</p>
+    <label for="book_title">Title</label><br>
     <div><%= f.text_field :title, class: "new-text form-control" %></div>
   </div>
   <div class="new-contents form-group">
-    <p>Body</p>
+    <label for="book_body">Opinion</label><br>
     <div><%= f.text_area :body,class: "new-text form-control" %></div>
   </div>
   <div class="form-group">
