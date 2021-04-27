@@ -1,40 +1,6 @@
 <div class="container px-5 px-sm-0">
   <div class="row">
-    <div class="col-md-3">
-     <h2 class="User-heading mb-1">User info</h2>
-      <%= attachment_image_tag current_user, :image, size: "100x100", format: 'jpeg', fallback: "no_image.jpg" %>
-      <table class="table">
-        <tbody>
-          <tr></tr>
-          <tr>
-            <th>name</th>
-            <th><%= current_user.name %></th>
-          </tr>
-          <tr>
-            <th>introduction</th>
-            <th><%= current_user.profile %></th>
-          </tr>
-        </tbody>
-      </table>
-      <div class="row">
-        <%= link_to edit_user_path(current_user.id), class:"btn btn-outline-secondary btn-block fas fa-user-cog mt-3", method: :get do %><% end %>
-      </div>
-
-      <h2 class="new-heading mt-3">New book</h2>
-      <%= form_with model:@book, local:true do |f| %>
-        <div class="new-contents form-group">
-          <p>Title</p>
-          <div><%= f.text_field :title, class: "new-text form-control" %></div>
-        </div>
-        <div class="new-contents form-group">
-          <p>Body</p>
-          <div><%= f.text_area :body,class: "new-text form-control" %></div>
-        </div>
-        <div class="form-group">
-          <%= f.submit 'Create Book', class: "btn btn-success" %>
-        </div>
-      <% end %>
-    </div>
+    <%= render 'books/leftside', book: @book, user: @user %>
 
     <div class="col-md-8 offset-md-1">
       <h2 class="Users-heading">Users</h2>
