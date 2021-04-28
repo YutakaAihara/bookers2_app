@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+DMMWEBCAMPの課題３の「失敗作」です。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+機能的には問題ないのにRSpecのテストでエラーが山ほど出てきたので、別のリポジトリに同じアプリケーションを作成し、問題点を比較しています。
+課題として提出するものは「webcamp_bookers2_app」という名前のリポジトリになります。
